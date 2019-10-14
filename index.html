@@ -34,7 +34,7 @@ document.onreadystatechange = function(){
     function LoadAgentz(){
         var resource = document.createElement('script'); 
             resource.defer = "true";
-            resource.src = https://dev2-chatbot.agentz.ai/agentz-chatbot.js?version=1&botUrl=https://dev2-chatbot.agentz.ai&title=title&businessAgent=eb64e778-7b66-4c9a-a1ad-d664d42df002;
+            resource.src = "https://dev2-chatbot.agentz.ai/agentz-chatbot.js?version=1&botUrl=https://dev2-chatbot.agentz.ai&title=title&businessAgent=eb64e778-7b66-4c9a-a1ad-d664d42df002";
             var script = document.getElementsByTagName('script')[0];
             script.parentNode.insertBefore(resource, script);
     }
@@ -124,7 +124,8 @@ document.onreadystatechange = function(){
                             <h3 class="card-feature__title"><span class="card-feature__icon">
                                 <i class="ti-layers"></i>
                             </span>Area Of Expertise</h3>
-				<button onclick="LoadAgentz()"> Chat with our Digital Receptionist</button>
+				     <button type="button" onclick="LoadAgentz()">  Chat with our Digital Receptionist</button>
+
 
                             <p class="card-feature__subtitle">Dr. Gladstone is a Board Certified Orthopaedic Surgeon specializing in hand, wrist and elbow conditions. </p>
                         </div>
