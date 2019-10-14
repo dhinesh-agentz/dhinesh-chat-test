@@ -16,7 +16,7 @@
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-	<div id="agentz-chatbot-eb64e778-7b66-4c9a-a1ad-d664d42df002"></div>
+<!-- 	<div id="agentz-chatbot-eb64e778-7b66-4c9a-a1ad-d664d42df002"></div>
 <script>
 document.onreadystatechange = function(){
     if (document.readyState === "complete") {
@@ -27,7 +27,18 @@ document.onreadystatechange = function(){
        script.parentNode.insertBefore(resource, script);
     }
 }
-</script>
+</script> -->
+	
+	<div id="agentz-chatbot-eb64e778-7b66-4c9a-a1ad-d664d42df002"></div>
+    <script>
+    function LoadAgentz(){
+        var resource = document.createElement('script'); 
+            resource.defer = "true";
+            resource.src = https://dev2-chatbot.agentz.ai/agentz-chatbot.js?version=1&botUrl=https://dev2-chatbot.agentz.ai&title=title&businessAgent=eb64e778-7b66-4c9a-a1ad-d664d42df002;
+            var script = document.getElementsByTagName('script')[0];
+            script.parentNode.insertBefore(resource, script);
+    }
+	</script>
 <!-- 	<div id="agentz-chatbot-eb64e778-7b66-4c9a-a1ad-d664d42df002"></div><script type="text/javascript" defer src="https://dev2-chatbot.agentz.ai/agentz-chatbot.js?version=1&botUrl=https://dev2-chatbot.agentz.ai&title=title&businessAgent=eb64e778-7b66-4c9a-a1ad-d664d42df002"></script> -->
 </head>
 <body>
@@ -113,6 +124,8 @@ document.onreadystatechange = function(){
                             <h3 class="card-feature__title"><span class="card-feature__icon">
                                 <i class="ti-layers"></i>
                             </span>Area Of Expertise</h3>
+				<button onclick="LoadAgentz()"> Chat with our Digital Receptionist</button>
+
                             <p class="card-feature__subtitle">Dr. Gladstone is a Board Certified Orthopaedic Surgeon specializing in hand, wrist and elbow conditions. </p>
                         </div>
                     </div>
